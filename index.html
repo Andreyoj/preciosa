@@ -1,0 +1,87 @@
+<!-- Pechocha, si ves esto te debo unas fresas con crema, ñami ñami -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1617" />
+  <title>Para mi Preciosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="opening-screen" id="openingScreen" aria-hidden="true">
+    <div class="opening-glow"></div>
+    <span class="opening-mark">Te amo</span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="kicker">Algo pequeño comparado con el amor que siento por ti. ❤</p>
+        <h1>Feliz cumpleaños,<br><em>mi Preciosa </em></h1>
+        <p class="hero-description">Para Brenda Nicole Ibarra Hernández.<br>Mira esta pequeña parte de mi corazón.</p>
+        <button class="gold-button" id="startButton">¿Quieres ver tu regalo?<span>↗</span></button>
+      </div>
+      <div class="hero-bottom"><span>Desliza luego de presionar el botón</span></div>
+    </section>
+
+    <section class="lotus-scene is-hidden" id="lotusScene" aria-label="Flor de loto">
+      <div class="lotus-stage">
+        <video class="lotus-video" id="lotusVideo" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+        <div class="lotus-backdrop"></div>
+        <p class="lotus-caption">Como una flor que abre sus pétalos con la luz del día, así florece mi corazón y todo mi mundo cada vez que me miras.</p>
+      </div>
+    </section>
+    <section class="intro editorial-section">
+      <h2>Hoy no solo cumple años una persona.<br><em>Hoy celebro que estás aquí.</em></h2>
+      <p class="body-copy">Y yo preparé este espacio para que cada pantalla tenga un detalle tuyo.</p>
+      <div class="small-flower" aria-hidden="true">✿</div>
+    </section>
+
+    <section class="music-section editorial-section" id="music">
+      <div class="section-top"><div><h2>Una canción que siempre quise dedicarte.<br><em>“Hasta donde te quiero”</em></h2></div></div>
+      <div class="music-layout">
+        <div class="record-wrap">
+          <div class="record-halo"></div>
+          <div class="vinyl" id="vinyl" aria-label="Disco de vinilo decorativo"><div class="grooves"></div><div class="record-label"><small>PARA</small><strong>TI</strong><small>CON AMOR</small></div><div class="record-hole"></div></div>
+          <div class="tonearm"><span></span></div>
+        </div>
+        <div class="track-meta"><h3>"Hasta donde te quiero"</h3><p>Si la música pudiera traducir todo lo que siento por ti, sonarías tú en cada letra o en cada palabra. Hay canciones que parecen escritas pensando en la suerte que tengo de tenerte, porque expresan lo profundamente que te quiero</p></div>
+        <div class="player-controls"><button class="icon-button" id="playButton" aria-label="Reproducir o pausar">▶</button><div class="track-status"><span id="currentTime">0:00</span><input id="progressBar" type="range" min="0" max="100" value="0" aria-label="Progreso de la canción"><span id="duration">0:00</span></div></div>
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+      <div class="lyrics-panel"><div class="lyrics" id="lyrics"></div></div>
+    </section>
+
+    <section class="drawings-section editorial-section" id="drawings">
+      <div class="section-top"><div><h2>Un detalle<br><em>solo para ti</em></h2></div></div>
+      <p class="body-copy">Toca la carta para descubrir un pedacito de ti que guardo conmigo.</p>
+      <div class="drawing-grid">
+        <button class="drawing-card eye-card" data-drawing="0" aria-label="Abrir el dibujo de tu hermosa mirada"><span class="paper-art">♡</span><strong>Tu mirada</strong><small>Ábrelo, plis</small></button>
+      </div>
+      <div class="drawing-viewer is-hidden" id="drawingViewer" role="dialog" aria-modal="true" aria-label="Dibujo abierto"><button class="close-button" id="closeDrawing">×</button><div class="fold-paper"><div class="paper-inner"><p class="kicker" id="drawingKicker">Para mi Preciosa</p><img class="large-art" id="largeArt" src="assets/drawings/eyes.jpg" alt="Dibujo de uno de sus ojos"><p class="drawing-text" id="drawingText">Perderme en tu mirada es mi lugar favorito en la tierra. Porque qué dicha tan grande la mía saber que soy el dueño de ese par de ojos bellos que me devuelven siempre una mirada llena de amor, dulzura y la más sincera ternura.</p><div class="paper-line"></div><p class="signature">Con todo mi amor,<br>André ♡</p></div></div></div>
+    </section>
+
+    <section class="letter-section editorial-section">
+      <div class="section-top"><div><h2>Lo que a veces<br><em>no sé cómo decirte cuando te veo</em></h2></div></div>
+      <article class="letter-paper"><p>Mi Preciosa.</p>
+        <p>Cada vez que te miro a los ojos hay palabras que se me quedan cortas. Por eso hoy quiero dejarte por escrito lo profundamente importante que eres para mí. Celebro tu existencia, tu risa, tu mirada, el hecho que eres mi compañera de vida y la belleza de que seas tú a quien amo y cada pequeño detalle que te hace tan única y perfecta ante mis ojos.</p>
+        <p>Lo que más deseo de aquí en adelante es regalarte amor, construir y vivir a tu lado momentos que jamás olvides y ser la razón de muchas de tus sonrisas, esas que hasta a mí me contagias. Quiero verte alcanzar todo lo que deseas, mientras te tomo de la mano y compartimos nuestra vida.</p>
+        <p>Gracias por existir, por iluminar mi vida y por ser de la manera más hermosa, tú.</p>
+        <p class="signature">Con todo mi amor,<br>Tu esposo ♡</p></article>
+    </section>
+
+    <section class="final-section editorial-section" id="final">
+      <div class="final-panel"><h2>Te quiero hasta donde<br><em>no me alcanzan las palabras ni mis besos para explicarte.</em></h2><p>Feliz cumpleaños, mi Preciosa.</p><button class="gold-button" id="finalButton">Quiero que veas algo más, mi linda</button><p class="final-message is-hidden" id="finalMessage">Te amo y soy afortunado de tenerte en mi vida. Siempre te protegeré, porque tengo que proteger lo único que le da sentido a mi vida. Esa eres tú. ♡</p></div>
+    </section>
+  </main>
+
+  <footer>Hecho con amor para Brenda de Yoj</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
